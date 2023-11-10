@@ -9,8 +9,8 @@ func main() {
 	fmt.Scan(&a)
 	fmt.Println("B = ")
 	fmt.Scan(&b)
-	fmt.Println("Сумма чисел:", a+b)
-	fmt.Println("Разность чисел:", a-b)
-	fmt.Println("Произведение чисел:", a*b)
-	fmt.Println("Частность чисел:", a/b)
+	fmt.Println("Сумма чисел:", a*a+b*b)
+	fmt.Println("Разность чисел:", a*a-b*b)
+	fmt.Println("Произведение чисел:", a*a*b*b)
+	fmt.Println("Частность чисел:", (a*a)/(b*b))
 }
