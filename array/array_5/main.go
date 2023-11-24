@@ -3,26 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	var (
-		n      int
-		minArr = 0
-	)
+	var n, min_ int
+
 	fmt.Scan(&n)
-	arr := make([]int, n)
-	for i := 0; i < n; i++ {
-		fmt.Scan(&arr[i])
-	}
 
-	minArr = arr[n-1]
-
+	array_ := make([]int, n)
 	for i := 0; i < n; i++ {
-		if i%2 != 0 {
-			if minArr > arr[i] {
-				minArr = arr[i]
-			}
-		} else {
-			minArr = 0
+		fmt.Scan(&array_[i])
+
+		if array_[i]%2 != 0 && (min_ == 0 || array_[i] < min_) {
+			min_ = array_[i]
 		}
 	}
-	fmt.Println(minArr)
+
+	fmt.Println(min_)
 }
