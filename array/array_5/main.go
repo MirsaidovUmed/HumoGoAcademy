@@ -20,6 +20,8 @@ func main() {
 			if minArr > arr[i] {
 				minArr = arr[i]
 			}
+		} else {
+			minArr = 0
 		}
 	}
 	fmt.Println(minArr)
