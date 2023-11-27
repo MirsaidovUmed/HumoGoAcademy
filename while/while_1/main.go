@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var a, b int
-	fmt.Scan(&a, &b)
-	for a >= b {
-		a -= b
+	var a, b int     // задаём две переменные
+	fmt.Scan(&a, &b) // задаём две переменные
+	for a >= b {     // пока a >= b
+		a -= b //a будет отнимать от себя куски b
 	}
-	fmt.Println(a)
+	fmt.Println(a) //вывод оставшихся кусков
 }
